@@ -24,7 +24,6 @@
   .shot-title { text-align: center; font-size: 16px; font-weight: 700; margin-bottom: 6px; }
   .shot-sub { text-align: center; font-size: 12px; color: #86909c; margin-bottom: 14px; }
 
-  /* 手机壳 */
   .phone {
     width: 320px; height: 660px; background: #0b0c10; border-radius: 44px; padding: 10px;
     box-shadow: 0 24px 48px rgba(29, 33, 41, .18); position: relative;
@@ -44,7 +43,6 @@
   .content { flex: 1; overflow-y: auto; padding: 12px; scrollbar-width: none; }
   .content::-webkit-scrollbar { display: none; }
 
-  /* TabBar */
   .tabbar {
     flex-shrink: 0; background: #fff; display: flex; padding: 6px 4px 14px;
     border-top: 1px solid #f2f3f5;
@@ -53,12 +51,10 @@
   .tab svg { display: block; margin: 0 auto 2px; width: 22px; height: 22px; }
   .tab.active { color: #5a5ce6; font-weight: 600; }
 
-  /* 通用卡片 */
   .card { background: #fff; border-radius: 14px; padding: 14px; margin-bottom: 10px; box-shadow: 0 2px 10px rgba(29,33,41,.04); }
   .card-title { font-size: 14px; font-weight: 600; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
   .tag-score { color: #5a5ce6; font-size: 12px; font-weight: 600; }
 
-  /* ===== 点名页 ===== */
   .hero {
     background: linear-gradient(135deg, #5a5ce6, #7b7df0); border-radius: 18px; padding: 16px;
     box-shadow: 0 8px 24px rgba(90,92,230,.28); color: #fff; margin-bottom: 10px;
@@ -91,7 +87,7 @@
   .pill.red { background: #ffece8; color: #f53f3f; }
   .pill.green { background: #e8ffea; color: #00b42a; }
   .chips { flex: 1; display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { font-size: 12px; font-weight: 500; background: #e8ffea; color: #00b42a; border-radius: 999px; padding: 6px 10px; }
+  .chip { font-size: 12px; font-weight: 500; background: #e8ffea; color: #00b42a; border-radius: 999px; padding: 6px 10px; cursor: pointer; }
 
   .strip { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
   .strip::-webkit-scrollbar { display: none; }
@@ -100,7 +96,6 @@
   .rec .m { display: flex; justify-content: space-between; font-size: 9px; color: #86909c; margin-top: 4px; }
   .ok { color: #00b42a; } .no { color: #f53f3f; } .pd { color: #86909c; }
 
-  /* ===== 名单页 ===== */
   .list-head {
     background: linear-gradient(135deg, #5a5ce6, #7b7df0); border-radius: 18px; padding: 16px;
     color: #fff; box-shadow: 0 8px 24px rgba(90,92,230,.28); margin-bottom: 10px;
@@ -108,7 +103,7 @@
   .list-head h3 { font-size: 15px; }
   .list-head p { font-size: 11px; color: rgba(255,255,255,.8); margin-top: 4px; }
   .list-head .acts { display: flex; gap: 8px; margin-top: 12px; }
-  .list-head .acts div { flex: 1; background: #fff; color: #5a5ce6; font-size: 12px; font-weight: 600; text-align: center; padding: 9px 0; border-radius: 999px; }
+  .list-head .acts div { flex: 1; background: #fff; color: #5a5ce6; font-size: 12px; font-weight: 600; text-align: center; padding: 9px 0; border-radius: 999px; cursor: pointer; }
   .list-head .acts div.ghost { background: rgba(255,255,255,.2); color: #fff; }
   .search { background: #fff; border-radius: 999px; padding: 10px 16px; font-size: 12px; color: #86909c; margin-bottom: 10px; box-shadow: 0 2px 10px rgba(29,33,41,.04); }
   .stu { display: flex; align-items: center; background: #fff; border-radius: 14px; padding: 10px 12px; margin-bottom: 8px; box-shadow: 0 2px 10px rgba(29,33,41,.04); }
@@ -121,7 +116,6 @@
   .stu .pt b { font-size: 14px; color: #5a5ce6; }
   .stu .pt i { display: block; font-style: normal; font-size: 9px; color: #86909c; }
 
-  /* ===== 排行页 ===== */
   .podium { display: flex; align-items: flex-end; justify-content: center; gap: 10px; padding: 8px 0 2px; }
   .pod { flex: 1; text-align: center; }
   .pod .pa { width: 46px; height: 46px; border-radius: 50%; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 16px; }
@@ -155,26 +149,42 @@
   .rank .rb i { display: block; height: 100%; background: linear-gradient(90deg, #7b7df0, #5a5ce6); border-radius: 999px; }
   .rank .rp { width: 44px; text-align: right; font-size: 13px; font-weight: 800; color: #5a5ce6; }
 
-  /* ===== 设置页 ===== */
   .acct { display: flex; align-items: center; gap: 10px; }
   .acct .aa { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #5a5ce6, #7b7df0); color: #fff; font-size: 18px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
   .acct .an { font-size: 14px; font-weight: 600; }
   .acct .ai { font-size: 10px; color: #86909c; margin-top: 2px; }
   .acct .env { margin-left: auto; font-size: 9px; background: #e8ffea; color: #00b42a; padding: 3px 8px; border-radius: 4px; }
-  .btn-line { background: #eef0ff; color: #5a5ce6; font-size: 12px; font-weight: 600; text-align: center; padding: 11px 0; border-radius: 999px; }
+  .btn-line { background: #eef0ff; color: #5a5ce6; font-size: 12px; font-weight: 600; text-align: center; padding: 11px 0; border-radius: 999px; cursor: pointer; }
   .btn-line.red { background: #ffece8; color: #f53f3f; margin-top: 8px; }
   .btn-hint { font-size: 10px; color: #86909c; margin-top: 6px; }
   .rule { display: flex; gap: 8px; margin-bottom: 9px; font-size: 11px; color: #4e5969; line-height: 1.55; }
   .rule .ic { flex-shrink: 0; }
   .rule b { color: #1d2129; }
 
-  /* 标注 */
   .notes { margin-top: 14px; background: #fff; border-radius: 12px; padding: 12px 14px; }
   .notes li { list-style: none; font-size: 11px; color: #4e5969; line-height: 1.7; padding-left: 18px; position: relative; }
   .notes li::before { content: attr(data-n); position: absolute; left: 0; top: 1px; width: 14px; height: 14px; border-radius: 50%; background: #5a5ce6; color: #fff; font-size: 9px; display: flex; align-items: center; justify-content: center; }
   .notes li b { color: #1d2129; }
 
   .foot { margin-top: 48px; text-align: center; font-size: 12px; color: #86909c; }
+
+  .search { cursor: text; }
+  input.search { border: none; outline: none; background: transparent; font-family: inherit; width: 100%; color: #1d2129; }
+  .pill.sel, .chip.sel { outline: 2px solid currentColor; outline-offset: -2px; font-weight: 700; transform: scale(.97); }
+  .tab { cursor: pointer; transition: opacity .15s; }
+  .tab:active { opacity: .6; }
+  .shot.flash .phone { box-shadow: 0 0 0 4px rgba(90,92,230,.55), 0 24px 48px rgba(29,33,41,.18); }
+  .stu { cursor: pointer; transition: transform .12s; }
+  .stu:active { transform: scale(.98); }
+  .list-head .acts div:active { transform: scale(.97); }
+  .btn-line:active { transform: scale(.98); }
+  #toast {
+    position: fixed; left: 50%; bottom: 48px; transform: translateX(-50%);
+    background: rgba(29,33,41,.92); color: #fff; font-size: 13px; padding: 10px 20px;
+    border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .25s;
+    z-index: 99; max-width: 82vw; text-align: center;
+  }
+  #toast.show { opacity: 1; }
 </style>
 </head>
 <body>
@@ -182,17 +192,17 @@
 <div class="head">
   <h1>课堂点名助手 · <span>高保真原型</span></h1>
   <p>课堂随机点名系统（结对编程任务）· 4 个核心页面 · 与实现版视觉 1:1 对应</p>
+  <p style="margin-top:6px;color:#5a5ce6;font-size:13px;">💡 可交互演示：点击手机内的按钮、搜索框、评分选项与底部 Tab 均有响应</p>
   <div class="badge-row">
     <div class="badge">随机 + 顺序双模式点名</div>
     <div class="badge">积分加权概率：积分越高越难被点中</div>
     <div class="badge">随机事件 + 点名转移权</div>
     <div class="badge">Excel 导入 / CSV 导出</div>
+    <div class="badge">✨ 可交互演示</div>
   </div>
 </div>
-
 <div class="gallery">
 
-  <!-- ① 点名页 -->
   <div class="shot">
     <div class="shot-title">① 点名（教师操作台）</div>
     <div class="shot-sub">核心页面 · 滚动动画抽人 + 现场评分</div>
@@ -214,7 +224,7 @@
           <div class="row"><div class="row-label">准确回答</div><div class="chips"><span class="chip">+0.5</span><span class="chip">+1</span><span class="chip">+1.5</span><span class="chip">+2</span><span class="chip">+2.5</span><span class="chip">+3</span></div></div>
         </div>
         <div class="card" style="border:1px solid rgba(255,138,61,.4);background:#fff3ea;">
-          <div class="btn-line" style="background:#ff8a3d;color:#fff;">✦ 使用转移权，转点其他同学</div>
+          <div class="btn-line" style="background:#ff8a3d;color:#fff;" data-toast="演示：转移权已使用，将随机转点一位同学">✦ 使用转移权，转点其他同学</div>
           <div class="btn-hint" style="text-align:center;">张伟轩 已被随机点名 4 次，获得一次转移权</div>
         </div>
         <div class="card">
@@ -243,7 +253,6 @@
     </ul>
   </div>
 
-  <!-- ② 名单页 -->
   <div class="shot">
     <div class="shot-title">② 名单（学情管理）</div>
     <div class="shot-sub">Excel/CSV 导入 · 搜索 · 增删改</div>
@@ -253,9 +262,9 @@
         <div class="list-head">
           <h3>学生名单</h3>
           <p>共 52 名学生 · 班级总积分 +86.5</p>
-          <div class="acts"><div>＋ 添加学生</div><div class="ghost">📥 导入名单</div></div>
+          <div class="acts"><div data-toast="演示：弹出添加学生表单（学号 / 姓名 / 专业）">＋ 添加学生</div><div class="ghost" data-toast="演示：打开微信聊天文件，选择 Excel / CSV 导入">📥 导入名单</div></div>
         </div>
-        <div class="search">🔍 搜索姓名 / 学号 / 专业</div>
+        <input class="search" id="stuSearch" placeholder="🔍 搜索姓名 / 学号 / 专业">
         <div class="stu"><div class="ava">张</div><div class="info"><div class="nm">张伟轩 <span class="rbadge">✦ 转移权</span></div><div class="meta">2025101 · 软件工程 · 被随机点名 4 次</div></div><div class="pt"><b>+6</b><i>总积分</i></div></div>
         <div class="stu"><div class="ava">郑</div><div class="info"><div class="nm">郑晓彤</div><div class="meta">2025110 · 软件工程 · 被随机点名 3 次</div></div><div class="pt"><b>+5</b><i>总积分</i></div></div>
         <div class="stu"><div class="ava">赵</div><div class="info"><div class="nm">赵欣怡</div><div class="meta">2025106 · 人工智能 · 被随机点名 2 次</div></div><div class="pt"><b>+4.5</b><i>总积分</i></div></div>
@@ -278,8 +287,6 @@
       <li data-n="5"><b>转移权标识</b>：满足条件的同学显示橙色徽标</li>
     </ul>
   </div>
-
-  <!-- ③ 排行页 -->
   <div class="shot">
     <div class="shot-title">③ 排行（积分可视化）</div>
     <div class="shot-sub">领奖台 + 分组柱形图 + 完整排名</div>
@@ -332,7 +339,6 @@
     </ul>
   </div>
 
-  <!-- ④ 设置页 -->
   <div class="shot">
     <div class="shot-title">④ 设置（数据出口与治理）</div>
     <div class="shot-sub">CSV 导出 · 数据重置 · 规则说明</div>
@@ -348,13 +354,13 @@
         </div>
         <div class="card">
           <div class="card-title">📤 导出积分详单</div>
-          <div class="btn-line">导出 CSV 详单（学号/姓名/专业/次数/积分）</div>
+          <div class="btn-line" data-toast="演示：已生成 CSV 详单，弹出转发面板可发送到电脑">导出 CSV 详单（学号/姓名/专业/次数/积分）</div>
           <div class="btn-hint">生成后弹出转发面板，可发送到文件传输助手或电脑，Excel 直接打开不乱码</div>
         </div>
         <div class="card">
           <div class="card-title">🗑 数据管理</div>
-          <div class="btn-line">重置积分与点名记录（保留名单）</div>
-          <div class="btn-line red">清空学生名单（危险操作）</div>
+          <div class="btn-line" data-toast="演示：二次确认后重置积分与点名记录（保留名单）">重置积分与点名记录（保留名单）</div>
+          <div class="btn-line red" data-toast="演示：二次确认后清空学生名单（危险操作）">清空学生名单（危险操作）</div>
           <div class="btn-hint">均需二次确认，防止误操作</div>
         </div>
         <div class="card">
@@ -388,7 +394,6 @@
 <div class="foot">课堂点名助手 · 结对编程任务原型设计 · 设计与实现 1:1 对应 · 可直接在浏览器中演示</div>
 
 <script>
-  // 原型交互：模拟「开始点名」滚动动画
   var names = ['张伟轩','李思琪','王浩然','刘雨桐','陈嘉豪','赵欣怡','孙博文','周雅婷','吴子轩','郑晓彤'];
   var stage = document.getElementById('stage');
   var btn = document.getElementById('startBtn');
@@ -413,10 +418,81 @@
       }
     }, 90);
   });
-  // 模式切换
   var seg = document.getElementById('seg').children;
   seg[0].addEventListener('click', function () { seg[0].classList.add('on'); seg[1].classList.remove('on'); btn.textContent = '开始点名'; });
   seg[1].addEventListener('click', function () { seg[1].classList.add('on'); seg[0].classList.remove('on'); btn.textContent = '开始点名'; });
+
+  var toastEl = document.createElement('div');
+  toastEl.id = 'toast';
+  document.body.appendChild(toastEl);
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 1800);
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-toast]') : null;
+    if (t) toast(t.getAttribute('data-toast'));
+  });
+  var shot1 = document.querySelectorAll('.shot')[0];
+  var totalEl = shot1.querySelector('.card .tag-score');
+  var sel = { attend: null, repeat: null, answer: null };
+  function val(el) { var m = (el.textContent.match(/[+-]\d+(\.\d+)?/) || ['0'])[0]; return parseFloat(m); }
+  function calc() {
+    var t = 0;
+    if (sel.attend) t += val(sel.attend);
+    if (sel.repeat) t += val(sel.repeat);
+    if (sel.answer) t += val(sel.answer);
+    totalEl.textContent = '累计 ' + (t >= 0 ? '+' : '') + t;
+  }
+  function group(els, key) {
+    els.forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (sel[key] === el) { el.classList.remove('sel'); sel[key] = null; }
+        else { if (sel[key]) sel[key].classList.remove('sel'); el.classList.add('sel'); sel[key] = el; }
+        calc();
+      });
+    });
+  }
+  var rows = shot1.querySelectorAll('.card .row');
+  group([rows[0].children[1], rows[0].children[2]], 'attend');
+  group([rows[1].children[1], rows[1].children[2]], 'repeat');
+  group([].slice.call(rows[2].querySelectorAll('.chip')), 'answer');
+  calc();
+  btn.addEventListener('click', function () {
+    setTimeout(function () {
+      document.querySelectorAll('.pill.sel, .chip.sel').forEach(function (el) { el.classList.remove('sel'); });
+      sel.attend = sel.repeat = sel.answer = null;
+      calc();
+    }, 1250);
+  });
+  var inp = document.getElementById('stuSearch');
+  inp.addEventListener('input', function () {
+    var k = inp.value.trim().toLowerCase();
+    document.querySelectorAll('.stu').forEach(function (s) {
+      var txt = (s.querySelector('.nm').textContent + s.querySelector('.meta').textContent).toLowerCase();
+      s.style.display = (!k || txt.indexOf(k) > -1) ? '' : 'none';
+    });
+  });
+  document.querySelectorAll('.stu').forEach(function (s) {
+    s.addEventListener('click', function () {
+      toast('演示：查看 / 编辑「' + s.querySelector('.nm').textContent.trim() + '」的积分详情');
+    });
+  });
+  var shots = document.querySelectorAll('.shot');
+  var tabMap = { '点名': 0, '名单': 1, '排行': 2, '设置': 3 };
+  document.querySelectorAll('.tabbar .tab').forEach(function (tab) {
+    var label = tab.textContent.trim();
+    if (!(label in tabMap)) return;
+    tab.addEventListener('click', function () {
+      var shot = shots[tabMap[label]];
+      shot.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      shot.classList.add('flash');
+      setTimeout(function () { shot.classList.remove('flash'); }, 900);
+    });
+  });
 </script>
 </body>
 </html>
